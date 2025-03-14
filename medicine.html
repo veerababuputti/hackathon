@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Recommendations</title>
+    <link rel="stylesheet" href="medicine.css" />
+  </head>
+  <body>
+    <h1>Medicine Recommendations</h1>
+    <form id="medicineForm">
+      <label for="condition">Enter Condition:</label>
+      <input
+        type="text"
+        id="condition"
+        name="condition"
+        placeholder="e.g., High Blood Pressure, Diabetes"
+        required
+      />
+      <button type="submit">Get Recommendations</button>
+    </form>
+    <div id="medicineResult"></div>
+
+    <script src="medicine.js"></script>
+  </body>
+</html>

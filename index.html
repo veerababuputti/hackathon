@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Driven Medical Platform</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("/images/health\ is\ wealth.jpg"); /* Add the image path here */
+        background-size: cover; /* Ensures the image covers the entire background */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        position: relative; /* Ensures the text stays above the image */
+      }
+
+      /* Overlay to make text more readable */
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Dark overlay for better text visibility */
+        z-index: 1;
+      }
+
+      h1,
+      .button-container {
+        position: relative; /* Ensures text and buttons are above the overlay */
+        z-index: 2;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Enhanced text shadow for readability */
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        background-color: #ff6f61;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background-color: #ff4a3d;
+        transform: translateY(-5px);
+      }
+
+      button:active {
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AI-Driven Medical Platform</h1>
+    <div class="button-container">
+      <button onclick="window.location.href='diagnosis.html'">
+        Disease Diagnosis
+      </button>
+      <button onclick="window.location.href='medicine.html'">
+        Medicine Recommendations
+      </button>
+      <button onclick="window.location.href='consultation.html'">
+        Virtual Consultations
+      </button>
+    </div>
+  </body>
+</html>

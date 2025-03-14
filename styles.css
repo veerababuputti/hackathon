@@ -1,0 +1,233 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Welcome Page Styles */
+#welcome {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(
+    135deg,
+    #007bff,
+    #00bfff
+  ); /* Gradient background */
+  color: white; /* White text for contrast */
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for emphasis */
+}
+
+#welcome p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+#welcome button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #ff6f61; /* Coral color for the button */
+  color: white;
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+#welcome button:hover {
+  background-color: #ff4a3d; /* Darker shade on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+#welcome button:active {
+  transform: translateY(0); /* Reset on click */
+}
+
+/* Header and Navigation Styles */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Section Styles */
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Glass Effect Styles */
+.form-box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Glass blur effect */
+  border-radius: 12px; /* Rounded corners */
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.form-box .input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-box .input-box input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  margin-top: 5px;
+}
+
+.form-box .input-box input:focus {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.form-box .input-box label {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-box .input-box input:focus ~ label,
+.form-box .input-box input:not(:placeholder-shown) ~ label {
+  top: -10px;
+  font-size: 12px;
+  color: #ff6f61;
+}
+
+.form-box .input-box i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.form-box .btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-box .btn:hover {
+  background-color: #ff4a3d;
+  transform: translateY(-5px);
+}
+
+.form-box .btn:active {
+  transform: translateY(0);
+}
+
+/* Animation (if needed, customize animations here) */
+.animation {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+button {
+  padding: 0.5em lem;
+  background: #45a049;
+  color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+}
